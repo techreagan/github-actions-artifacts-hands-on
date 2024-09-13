@@ -27,7 +27,7 @@ jobs:
       - name: Dowload artifact
         uses: actions/download-artifact@v4
         with:
-          name: hello.txt
+          name: hello-artifact
           path: ./artifacts
 
       - name: Output artifact file
