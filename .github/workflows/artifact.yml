@@ -27,8 +27,8 @@ jobs:
       - name: Dowload artifact
         uses: actions/download-artifact@v4
         with:
+          path: ./artifacts
           name: hello-artifact
-          path: artifacts
 
       - name: Output artifact file
         run: cat ./artifacts/hello.txt
